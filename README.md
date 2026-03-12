@@ -1,4 +1,4 @@
-# CTI Threat Intelligence — Projet 5
+# CTI Threat Intelligence 
 
 ![ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-v14-red)
 ![License](https://img.shields.io/badge/License-TLP%3AWHITE-white)
@@ -14,10 +14,15 @@ Chaque dossier contient un profil complet, un tableau de mapping TTPs, une layer
 | Groupe | Origine | Motivation | Statut | Techniques mappées |
 |--------|---------|------------|--------|-------------------|
 | [APT28 / Fancy Bear](./groups/APT28-FancyBear/) | 🇷🇺 Russie (GRU) | Espionnage | ✅ Complet | 20 |
-| Sandworm | 🇷🇺 Russie (GRU) | Sabotage | 🔄 En cours | — |
+| Sandworm |  Russie (GRU) | Sabotage | 🔄 En cours | — |
 | LockBit | 🌍 International | Cybercrime | ⬜ À faire | — |
-| Lapsus$ | 🇬🇧 UK/Brésil | Extorsion | ⬜ À faire | — |
-
+| Lapsus$ |  UK/Brésil | -Extorsion| ⬜ À faire | — |
+| Noname057 |  Russie | * | ⬜ À faire | — |
+| LazarusGroup |  Corée du Nord | * | ⬜ À faire | — |
+| Volt Typhoon |  Chine | * | ⬜ À faire | — |
+| BlackCat/ ALPHV | * | * | ⬜ À faire | — |
+| TA505 | * | *| ⬜ À faire | — |
+| Cl0p | * | * | ⬜ À faire | — |
 ---
 
 ## Structure du repo
