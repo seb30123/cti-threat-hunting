@@ -9,11 +9,11 @@
 
 | Source | URL | Type | Langue | Priorité |
 |--------|-----|------|--------|----------|
-| MITRE ATT&CK G0007 | https://attack.mitre.org/groups/G0007/ | Page officielle | EN | 🥇 Indispensable |
-| ANSSI — Rapport APT28 campagnes France | https://www.cert.ssi.gouv.fr/uploads/CERTFR-2025-CTI-006.pdf/ | Rapport technique | FR | 🥇 Indispensable |
-| ANSSI — Alerte JO Paris 2024 | https://www.cert.ssi.gouv.fr/alerte/ | Alerte TLP:WHITE | FR | 🥈 Important |
-| CISA Advisory AA23-108A (routeurs compromis) | https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-108 | Advisory | EN | 🥈 Important |
-| NSA/FBI Advisory — Drovorub Linux rootkit | https://media.defense.gov/2020/Aug/13/2002476465/-1/-1/0/CSA_DROVORUB_RUSSIAN_GRU_MALWARE_AUG_2020.PDF | Advisory | EN | 🥉 Utile |
+| MITRE ATT&CK G0007 | https://attack.mitre.org/groups/G0007/ | Page officielle | EN |  Indispensable |
+| ANSSI — Rapport APT28 campagnes France | https://www.cert.ssi.gouv.fr/uploads/CERTFR-2025-CTI-006.pdf/ | Rapport technique | FR |  Indispensable |
+| ANSSI — Alerte JO Paris 2024 | https://www.cert.ssi.gouv.fr/alerte/ | Alerte TLP:WHITE | FR |  Important |
+| CISA Advisory AA23-108A (routeurs compromis) | https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-108 | Advisory | EN |  Important |
+| NSA/FBI Advisory — Drovorub Linux rootkit | https://media.defense.gov/2020/Aug/13/2002476465/-1/-1/0/CSA_DROVORUB_RUSSIAN_GRU_MALWARE_AUG_2020.PDF | Advisory | EN |  Utile |
 
 ---
 
@@ -32,4 +32,4 @@
 
 
 
-*Tous les liens pointent vers des sources TLP:WHITE accessibles publiquement. Aucun rapport classifié ou à accès restreint n'est référencé ici.*
+*Tous les liens pointent vers des sources accessibles publiquement. Aucun rapport classifié ou à accès restreint n'est référencé ici.*

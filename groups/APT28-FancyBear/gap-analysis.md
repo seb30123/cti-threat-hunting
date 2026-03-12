@@ -5,6 +5,7 @@
 **Techniques dans ma layer :** 20  
 **Techniques dans la layer MITRE officielle :** ~60 (Enterprise)  
 
+> **Note :** Les Techniques dans ma layer sont des techniques trouvées durant mes recherches sur le groupe et confirmé par la layer MITRE.
 ---
 
 ## Résultats globaux
@@ -16,7 +17,7 @@
 | Techniques MITRE que je n'ai pas trouvées | ~40 |
 | Taux de couverture de ma layer | ~30% |
 
-> **Note :** Un taux de 30% est normal pour une première analyse. MITRE compile des années de rapports. L'objectif n'est pas l'exhaustivité mais la rigueur méthodologique.
+
 
 ---
 

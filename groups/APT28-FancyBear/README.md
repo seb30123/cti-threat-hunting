@@ -1,9 +1,6 @@
 # APT28 / Fancy Bear — CTI Profile
 
-![ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-G0007-red)
-![Confidence](https://img.shields.io/badge/Attribution-HIGH-red)
-![Status](https://img.shields.io/badge/Status-Active-orange)
-![TLP](https://img.shields.io/badge/TLP-WHITE-white)
+
 
 | Champ | Valeur |
 |-------|--------|
