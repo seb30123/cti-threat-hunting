@@ -48,4 +48,4 @@ cti-threat-intelligence/
 
 
 
-*Toutes les données sont issues de sources publiques TLP:WHITE.*
+*Toutes les données sont issues de sources publiques.*

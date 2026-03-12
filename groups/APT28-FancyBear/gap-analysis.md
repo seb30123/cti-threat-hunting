@@ -3,7 +3,7 @@
 **Date de comparaison :** 2026-03  
 **Layer MITRE de référence :** attack.mitre.org/groups/G0007/  
 **Techniques dans ma layer :** 20  
-**Techniques dans la layer MITRE officielle :** ~60 (Enterprise)  
+**Techniques dans la layer MITRE officielle :** ~40 (Enterprise)  
 
 > **Note :** Les Techniques dans ma layer sont des techniques trouvées durant mes recherches sur le groupe et confirmé par la layer MITRE.
 ---
