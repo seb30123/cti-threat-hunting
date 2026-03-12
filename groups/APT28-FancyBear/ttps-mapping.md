@@ -43,15 +43,4 @@
 
 ---
 
-## Techniques à approfondir (identifiées dans les sources mais non encore mappées)
 
-Ces techniques apparaissent dans les sources mais demandent une analyse plus poussée avant d'être ajoutées avec confiance :
-
-- **LoJax — UEFI Rootkit** → probablement T1542.001 (System Firmware) — source : ESET 2018
-- **Drovorub (Linux rootkit)** → probablement T1014 (Rootkit) — source : NSA/FBI Advisory 2020
-- **Utilisation de routeurs SOHO comme relais** → probablement T1584.008 (Compromise Infrastructure — Network Devices) — source : FBI/CISA 2023
-- **OCEANMAP (C2 via IMAP)** → probablement T1071.003 (Mail Protocols) — source : ESET 2023
-
----
-
-*Ce tableau est volontairement non exhaustif — APT28 utilise 50+ techniques documentées. L'objectif est d'illustrer la méthodologie de mapping, pas d'être une référence complète.*

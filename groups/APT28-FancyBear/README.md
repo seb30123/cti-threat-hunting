@@ -21,7 +21,7 @@
 
 APT28 est un groupe de cyberespionnage étatique russe considéré comme l'une des menaces les plus sophistiquées et les plus actives au monde. Actif depuis au moins 2004, le groupe opère au profit du renseignement militaire russe (GRU) et cible principalement les gouvernements, organisations de défense, médias et entités politiques des pays membres de l'OTAN.
 
-En France, le groupe est suivi de près par l'ANSSI qui lui a officiellement attribué plusieurs campagnes ciblant des administrations, des acteurs de la défense, et des organisations liées aux Jeux Olympiques de Paris 2024. Elle s'est fait connaître pour son attaque contre le parti En Marche ! durant les éléctions présidentielles de 2017.
+En France, le groupe est suivi de près par l'ANSSI qui lui a officiellement attribué plusieurs campagnes ciblant des administrations, des acteurs de la défense, et des organisations liées aux Jeux Olympiques de Paris 2024. Elle s'est fait connaître pour son attaque contre le parti En Marche ! durant les éléctions présidentielles de 2017, attaque qui lui a été attribué avec un niveau de HAUTE confiance.
 
 ---
 

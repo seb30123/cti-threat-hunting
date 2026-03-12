@@ -11,9 +11,9 @@ Chaque dossier contient un profil complet, un tableau de mapping TTPs, une layer
 
 | Groupe | Origine | Motivation | Statut | Techniques mappées |
 |--------|---------|------------|--------|-------------------|
-| [APT28 / Fancy Bear](./groups/APT28-FancyBear/) | 🇷🇺 Russie (GRU) | Espionnage | ✅ Complet | 20 |
-| Sandworm |  Russie (GRU) | Sabotage | 🔄 En cours | — |
-| LockBit | 🌍 International | Cybercrime | ⬜ À faire | — |
+| [APT28 / Fancy Bear](./groups/APT28-FancyBear/) | 🇷🇺 Russie (GRU) | Espionnage | 🔄 En cours | - |
+| Sandworm |  Russie (GRU) | Sabotage | ⬜ À faire | — |
+| LockBit |  International | Cybercrime | ⬜ À faire | — |
 | Lapsus$ |  UK/Brésil | Extorsion| ⬜ À faire | — |
 | Noname057 |  Russie | * | ⬜ À faire | — |
 | LazarusGroup |  Corée du Nord | * | ⬜ À faire | — |
