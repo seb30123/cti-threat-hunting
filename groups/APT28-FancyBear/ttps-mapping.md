@@ -1,7 +1,7 @@
 # TTPs Mapping — APT28 / Fancy Bear
 
-**Dernière mise à jour :** 2025-03  
-**Techniques identifiées :** 20  
+**Dernière mise à jour :** 2026-03  
+**Techniques identifiées :** X  
 **Sources utilisées :** MITRE G0007, ANSSI CERT-FR, Mandiant APT28 (2014), Microsoft MSTIC (Forest Blizzard), ESET, CrowdStrike  
 
 ---

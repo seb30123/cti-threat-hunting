@@ -30,13 +30,13 @@ APT28 opère exclusivement au profit des intérêts stratégiques russes. Ses ob
 
 | Secteur | Exemples | Priorité |
 |---------|----------|----------|
-| Gouvernements & administrations | Ministères FR, UE, USA, Ukraine | ⭐⭐⭐ Critique |
-| Défense & industrie militaire | OTAN, contractants défense | ⭐⭐⭐ Critique |
-| Partis politiques | DNC (USA), En Marche! (FR), CDU (DE) | ⭐⭐⭐ Critique |
-| Médias & journalistes | TV5 Monde (FR), Deutsche Welle | ⭐⭐ Élevé |
-| Organisations sportives | WADA, Comités olympiques, fédérations | ⭐⭐ Élevé |
-| Think-tanks & ONG | Atlantic Council, organisations droits de l'homme | ⭐⭐ Élevé |
-| Infrastructure critique | Énergie, télécommunications | ⭐ Modéré |
+| Gouvernements & administrations | Ministères FR, UE, USA, Ukraine |  Critique |
+| Défense & industrie militaire | OTAN, contractants défense |  Critique |
+| Partis politiques | DNC (USA), En Marche! (FR), CDU (DE) |  Critique |
+| Médias & journalistes | TV5 Monde (FR), Deutsche Welle |  Élevé |
+| Organisations sportives | WADA, Comités olympiques, fédérations |  Élevé |
+| Think-tanks & ONG | Atlantic Council, organisations droits de l'homme | Élevé |
+| Infrastructure critique | Énergie, télécommunications |  Modéré |
 
 ### Zones géographiques ciblées
 
