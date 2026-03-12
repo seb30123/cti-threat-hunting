@@ -1,6 +1,6 @@
 # Gap Analysis — APT28 vs MITRE G0007 Officiel
 
-**Date de comparaison :** 2025-03  
+**Date de comparaison :** 2026-03  
 **Layer MITRE de référence :** attack.mitre.org/groups/G0007/  
 **Techniques dans ma layer :** 20  
 **Techniques dans la layer MITRE officielle :** ~60 (Enterprise)  
@@ -20,7 +20,7 @@
 
 ---
 
-## Techniques trouvées ET confirmées par MITRE ✅
+## Techniques trouvées ET confirmées par MITRE 
 
 Ces techniques sont dans ma table ET dans la layer officielle MITRE G0007.
 
@@ -47,7 +47,7 @@ Ces techniques sont dans ma table ET dans la layer officielle MITRE G0007.
 
 ---
 
-## Techniques trouvées NON confirmées par MITRE ❓
+## Techniques trouvées NON confirmées par MITRE 
 
 Ces techniques sont dans ma table mais pas dans la layer MITRE. À revalider.
 
@@ -57,21 +57,5 @@ Ces techniques sont dans ma table mais pas dans la layer MITRE. À revalider.
 | T1053.005 | Scheduled Task | Microsoft MSTIC 2022 mentionne persistence via scheduled tasks mais ne cite pas APT28 explicitement | **LOW** — à revalider avec une source plus précise |
 
 ---
-
-## Techniques MITRE que je n'ai pas trouvées 📘
-
-Sélection des techniques importantes manquées et pourquoi.
-
-| ID | Technique | Pourquoi manquée | Où la trouver |
-|----|-----------|-----------------|---------------|
-| T1542.001 | System Firmware (LoJax) | Je n'avais pas lu le rapport ESET LoJax 2018 | ESET "LoJax: First UEFI rootkit" (2018) |
-| T1014 | Rootkit (Drovorub) | Rapport NSA/FBI non inclus dans mes sources initiales | NSA/FBI Advisory 20-25241601 |
-| T1584.008 | Compromise Network Devices | Information récente (2023) absente de mes sources | FBI/CISA Advisory AA23-108A |
-| T1071.003 | Mail Protocols (OCEANMAP) | Outil récent (2023) non inclus dans mes sources | ESET "Reading the OCEANMAP" (2023) |
-| T1003.001 | LSASS Memory (credential dump) | Comportement indirect, mentionné sans détail dans Mandiant | Mandiant APT28 report p.24 |
-| T1560 | Archive Collected Data | Comportement logique mais non annoté dans mes sources | À vérifier dans ESET Sednit Part 3 |
-
----
-
 
 *Comparaison effectuée manuellement via attack.mitre.org/groups/G0007/ — layer officielle MITRE téléchargeable sur la même page*

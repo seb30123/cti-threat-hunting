@@ -1,6 +1,6 @@
 # Sources — APT28 / Fancy Bear
 
-**Dernière consultation :** 2025-03  
+**Dernière consultation :** 2026-03  
 **Nombre de sources :** 12  
 
 ---
@@ -10,9 +10,9 @@
 | Source | URL | Type | Langue | Priorité |
 |--------|-----|------|--------|----------|
 | MITRE ATT&CK G0007 | https://attack.mitre.org/groups/G0007/ | Page officielle | EN | 🥇 Indispensable |
-| ANSSI — Rapport APT28 campagnes France | https://www.cert.ssi.gouv.fr/cti/CERTFR-2023-CTI-005/ | Rapport technique | FR | 🥇 Indispensable |
+| ANSSI — Rapport APT28 campagnes France | https://www.cert.ssi.gouv.fr/uploads/CERTFR-2025-CTI-006.pdf/ | Rapport technique | FR | 🥇 Indispensable |
 | ANSSI — Alerte JO Paris 2024 | https://www.cert.ssi.gouv.fr/alerte/ | Alerte TLP:WHITE | FR | 🥈 Important |
-| CISA Advisory AA23-108A (routeurs compromis) | https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-108a | Advisory | EN | 🥈 Important |
+| CISA Advisory AA23-108A (routeurs compromis) | https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-108 | Advisory | EN | 🥈 Important |
 | NSA/FBI Advisory — Drovorub Linux rootkit | https://media.defense.gov/2020/Aug/13/2002476465/-1/-1/0/CSA_DROVORUB_RUSSIAN_GRU_MALWARE_AUG_2020.PDF | Advisory | EN | 🥉 Utile |
 
 ---
@@ -30,15 +30,6 @@
 | ESET — OCEANMAP Reading the Map | https://www.welivesecurity.com/en/eset-research/sednit-groups-use-new-backdoor-olympicspoofed-lures/ | OCEANMAP, C2 via IMAP | 2023 |
 | CrowdStrike — Fancy Bear profile | https://adversary.crowdstrike.com/en-us/adversary/fancy-bear/ | Profil complet, TTPs | Mis à jour 2024 |
 
----
 
-## Comment utiliser ces sources
-
-1. **Commencer par** : MITRE G0007 + ANSSI CERTFR-2023-CTI-005
-2. **Approfondir avec** : Mandiant 2014 (rapport fondateur) + ESET Sednit Part 1-3
-3. **Pour les TTPs récents** : Microsoft MSTIC 2023 + CISA Advisory 2023
-4. **Pour les outils spécialisés** : ESET LoJax + ESET OCEANMAP
-
----
 
 *Tous les liens pointent vers des sources TLP:WHITE accessibles publiquement. Aucun rapport classifié ou à accès restreint n'est référencé ici.*
