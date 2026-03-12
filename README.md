@@ -1,7 +1,5 @@
 # CTI Threat Intelligence 
 
-![ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-v14-red)
-![License](https://img.shields.io/badge/License-TLP%3AWHITE-white)
 ![Status](https://img.shields.io/badge/Status-En%20cours-orange)
 
 Repo Mapping MITRE ATT&CK sur des groupes de hackers réels.  
