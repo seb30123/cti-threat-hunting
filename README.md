@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/License-TLP%3AWHITE-white)
 ![Status](https://img.shields.io/badge/Status-En%20cours-orange)
 
-Repo d'apprentissage CTI — Mapping MITRE ATT&CK sur des groupes de hackers réels.  
+Repo Mapping MITRE ATT&CK sur des groupes de hackers réels.  
 Chaque dossier contient un profil complet, un tableau de mapping TTPs, une layer ATT&CK Navigator et les sources utilisées.
 
 ---
@@ -16,7 +16,7 @@ Chaque dossier contient un profil complet, un tableau de mapping TTPs, une layer
 | [APT28 / Fancy Bear](./groups/APT28-FancyBear/) | 🇷🇺 Russie (GRU) | Espionnage | ✅ Complet | 20 |
 | Sandworm |  Russie (GRU) | Sabotage | 🔄 En cours | — |
 | LockBit | 🌍 International | Cybercrime | ⬜ À faire | — |
-| Lapsus$ |  UK/Brésil | -Extorsion| ⬜ À faire | — |
+| Lapsus$ |  UK/Brésil | Extorsion| ⬜ À faire | — |
 | Noname057 |  Russie | * | ⬜ À faire | — |
 | LazarusGroup |  Corée du Nord | * | ⬜ À faire | — |
 | Volt Typhoon |  Chine | * | ⬜ À faire | — |
@@ -48,14 +48,6 @@ cti-threat-intelligence/
 
 ---
 
-## Méthodologie
 
-1. Lire les sources officielles (MITRE, ANSSI, Mandiant, Microsoft MSTIC)
-2. Extraire les comportements bruts
-3. Mapper chaque comportement → technique ATT&CK avec niveau de confiance
-4. Créer la layer ATT&CK Navigator
-5. Comparer avec la layer officielle MITRE (gap analysis)
 
----
-
-*Toutes les données sont issues de sources publiques TLP:WHITE. Usage pédagogique uniquement.*
+*Toutes les données sont issues de sources publiques TLP:WHITE.*
