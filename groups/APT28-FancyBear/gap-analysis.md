@@ -73,24 +73,5 @@ Sélection des techniques importantes manquées et pourquoi.
 
 ---
 
-## Leçons apprises
-
-1. **Les rapports ESET sur Sednit** (3 parties publiées) sont les sources les plus techniques et les plus riches pour APT28 — à lire en priorité pour la v2 de ce mapping
-2. **Les alertes CISA/FBI récentes** (2022-2023) couvrent des TTPs modernes absentes des anciens rapports
-3. **OCEANMAP** (C2 via IMAP) montre qu'APT28 adapte ses techniques — important de vérifier les sources récentes
-4. Le comportement `cmd.exe` (T1059.003) est difficile à attribuer avec certitude car trop générique
-
----
-
-## Actions pour la v2 de ce mapping
-
-- [ ] Lire ESET "Sednit" Part 1, 2, 3 (welivesecurity.com)
-- [ ] Lire NSA/FBI Advisory sur Drovorub
-- [ ] Lire FBI/CISA Advisory AA23-108A (routeurs compromis)
-- [ ] Lire ESET OCEANMAP report (2023)
-- [ ] Revalider T1053.005 et T1059.003 avec sources précises
-- [ ] Passer de 20 à 35+ techniques documentées
-
----
 
 *Comparaison effectuée manuellement via attack.mitre.org/groups/G0007/ — layer officielle MITRE téléchargeable sur la même page*
