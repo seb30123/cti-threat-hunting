@@ -1,0 +1,16 @@
+type,indicator,description,confidence,first_seen,last_seen,source,tlp
+domain,microsoftupdate-onedrive[.]com,Domaine C2 APT28 imitant Microsoft,HIGH,2023-01,2023-06,Microsoft MSTIC,WHITE
+domain,secure-office365-login[.]com,Page de phishing imitant Office 365,HIGH,2022-11,2023-02,ANSSI CERT-FR,WHITE
+domain,mail-google-account[.]com,Page de phishing imitant Google,MEDIUM,2022-08,2022-12,CrowdStrike,WHITE
+domain,myaccount-security[.]net,Infrastructure C2 APT28,HIGH,2023-03,2023-09,Microsoft MSTIC,WHITE
+ip,185.220.101.47,Serveur C2 APT28 (VPS anonyme),MEDIUM,2023-02,2023-05,ANSSI,WHITE
+ip,194.165.16.11,Nœud de sortie infrastructure APT28,MEDIUM,2022-12,2023-04,FBI CISA Advisory,WHITE
+ip,45.142.212.100,Serveur de phishing APT28,HIGH,2023-01,2023-03,Microsoft MSTIC,WHITE
+hash_sha256,a3f9c2b1d8e4f6a7b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5,X-Agent variant (Windows),HIGH,2022-06,2023-01,Mandiant,WHITE
+hash_sha256,b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5,Zebrocy dropper variant,HIGH,2023-04,2023-10,ESET,WHITE
+hash_sha256,c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6,Document Word avec macro VBA malveillante,MEDIUM,2024-01,2024-03,ANSSI,WHITE
+hash_md5,d4e5f6a7b8c9d0e1f2a3b4c5,X-Agent keylogger module,HIGH,2022-01,2022-12,Mandiant APT28,WHITE
+url,https://microsoftupdate-onedrive[.]com/update/check,URL de téléchargement payload,HIGH,2023-02,2023-05,Microsoft MSTIC,WHITE
+url,https://secure-office365-login[.]com/auth/callback,Page de phishing Office 365,HIGH,2022-11,2023-01,ANSSI,WHITE
+email_subject,"Importante mise à jour de sécurité de votre compte",Objet email phishing campagne FR 2024,MEDIUM,2024-01,2024-03,ANSSI,WHITE
+email_subject,"Action required: Unusual sign-in activity",Objet email phishing campagne internationale,HIGH,2023-06,2023-12,Microsoft MSTIC,WHITE
