@@ -5,7 +5,7 @@
 | Champ | Détail |
 |-------|--------|
 | Nom principal | APT28 |
-| Aliases | Fancy Bear (CrowdStrike), Sofacy (Kaspersky), STRONTIUM / Forest Blizzard (Microsoft), Sednit (ESET), Pawn Storm (Trend Micro), Tsar Team (iSight) |
+| Aliases | APT28 (FireEye), ATK5 (Thales), Blue Athena (PwC), BlueDelta (Recorded Future), Fancy Bear (Crowdstrike), Fighting Ursa (Palo Alto), Forest Blizzard (Microsoft), FROZENLAKE (Google), GRAPHITE (Dragos), Group 74 (Talos), PawnStorm (Trend Micro), Sednit (ESET), Snakemackerel (iDefense), Sofacy (Palo Alto), STRONTIUM (Microsoft), TA422 (Proofpoint), TG-4127 (SCWX CTU), Tsar Team (iSight), UAC-0001 (CERT-UA) |
 | ID MITRE ATT&CK | G0007 |
 | Pays d'origine | Russie |
 | Entité commanditaire | GRU — Direction principale du renseignement de l'état-major des forces armées russes, unité militaire 26165 (et 74455 pour Sandworm, groupe cousin) |
