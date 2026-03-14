@@ -1,0 +1,434 @@
+{
+  "name": "Sandworm Team / APT44 — Layer CTI (Evidence cutoff: March 2026)",
+  "versions": {
+    "attack": "16",
+    "navigator": "5.0",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Mapping ATT&CK Enterprise des techniques APT44. Source primaire: Andrey Pautov CTI Research (mars 2026) + MITRE G0034 + CERT Polska + Amazon ATI. Rouge=HIGH, Orange=MEDIUM-HIGH, Rose=Impact/Sabotage (marqueur distinctif APT44).",
+  "filters": {
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Network",
+      "IaaS"
+    ]
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "side",
+    "showID": true,
+    "showName": true
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T1190",
+      "score": 100,
+      "color": "#FF4757",
+      "comment": "HIGH — Exploit edge software (CVE-2014-4114, FortiGate, ConnectWise, Zimbra, Exchange, Confluence). Source: R9 R10 R23 R29",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1133",
+      "score": 100,
+      "color": "#FF4757",
+      "comment": "HIGH — External Remote Services (VPN, firewalls exposés). Source: R10 R23 R29",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1078.003",
+      "score": 100,
+      "color": "#FF4757",
+      "comment": "HIGH — Credentials locaux edge/OT. Source: R23",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1195.002",
+      "score": 100,
+      "color": "#FF4757",
+      "comment": "HIGH — Supply chain: M.E.Doc (NotPetya), DcRAT via KMS piratés (2025). Source: R1 R4 EclecticIQ",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1669",
+      "score": 100,
+      "color": "#FF4757",
+      "comment": "HIGH — Neighbor Wireless Access (Nearest Neighbor 2024 — technique documentée pour la 1ère fois). Source: R29 Volexity",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1059.001",
+      "score": 100,
+      "color": "#FFA502",
+      "comment": "HIGH — PowerShell payloads + collecte credentials. Source: R23 CISA",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.003",
+      "score": 100,
+      "color": "#FFA502",
+      "comment": "HIGH — cmd.exe (vssadmin, cipher, bcdedit, netsh, reg save). Source: R23",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1047",
+      "score": 100,
+      "color": "#FFA502",
+      "comment": "HIGH — WMI exécution distante. Source: Mandiant APT44",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1569.002",
+      "score": 100,
+      "color": "#FFA502",
+      "comment": "HIGH — Service Execution / PsExec. Source: R23",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "score": 100,
+      "color": "#A29BFE",
+      "comment": "HIGH — Registry Run Keys persistence. Source: ESET MITRE G0034",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1542.001",
+      "score": 100,
+      "color": "#A29BFE",
+      "comment": "HIGH — System Firmware persistence (Cyclops Blink — survit resets). Source: R13 R26",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1053.005",
+      "score": 100,
+      "color": "#A29BFE",
+      "comment": "HIGH — Scheduled Tasks pour wipers via GPO. Source: R21 R23",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1027",
+      "score": 100,
+      "color": "#6E7681",
+      "comment": "HIGH — Obfuscation + Set-PSReadLineOption anti-forensics. Source: R23 Mandiant",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1036.005",
+      "score": 100,
+      "color": "#6E7681",
+      "comment": "HIGH — Process masquerading [kworker:0/1] (Cyclops Blink). Source: R13",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1562.004",
+      "score": 100,
+      "color": "#6E7681",
+      "comment": "HIGH — iptables rules injection (Cyclops Blink). Source: R13",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1562.013",
+      "score": 100,
+      "color": "#6E7681",
+      "comment": "HIGH — FortiGate config modification. Source: R23 CERT Polska Jan 2026",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1562.001",
+      "score": 100,
+      "color": "#6E7681",
+      "comment": "HIGH — Disable security tools pendant opérations. Source: R23",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1222",
+      "score": 100,
+      "color": "#6E7681",
+      "comment": "HIGH — File permissions modification (wipers). Source: R23",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1070.004",
+      "score": 100,
+      "color": "#6E7681",
+      "comment": "HIGH — Cleanup/file deletion post-opération. Source: R23",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1040",
+      "score": 100,
+      "color": "#00CEC9",
+      "comment": "HIGH — Network Sniffing (credential capture sur edge devices). Source: R29 ATI",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1003.001",
+      "score": 100,
+      "color": "#00CEC9",
+      "comment": "HIGH — LSASS Memory dump. Source: R23",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1003.003",
+      "score": 100,
+      "color": "#00CEC9",
+      "comment": "HIGH — NTDS.dit + SAM/SYSTEM/SECURITY via reg save + vssadmin. Source: R23",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1558",
+      "score": 100,
+      "color": "#00CEC9",
+      "comment": "HIGH — Diamond Ticket (modifier PAC TGT légitime KRBTGT AES256 — distinct T1558.001 Golden Ticket). Source: R23",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1046",
+      "score": 100,
+      "color": "#1E90FF",
+      "comment": "HIGH — Network Service Discovery interne. Source: R23",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1016.002",
+      "score": 100,
+      "color": "#1E90FF",
+      "comment": "HIGH — Wi-Fi Discovery (Nearest Neighbor). Source: R29",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1021.001",
+      "score": 100,
+      "color": "#1E90FF",
+      "comment": "HIGH — RDP lateral movement. Source: R23 R29",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1021.002",
+      "score": 100,
+      "color": "#1E90FF",
+      "comment": "HIGH — SMB/Admin Shares. Source: R23",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1005",
+      "score": 100,
+      "color": "#2ED573",
+      "comment": "HIGH — Data from Local System. Source: Mandiant APT44",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1560.001",
+      "score": 100,
+      "color": "#2ED573",
+      "comment": "HIGH — Archive via Compress-Archive PowerShell. Source: R23",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1602.002",
+      "score": 100,
+      "color": "#2ED573",
+      "comment": "HIGH — Network device config dump. Source: R23",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1567",
+      "score": 100,
+      "color": "#FF6B35",
+      "comment": "HIGH — Exfil vers Google Drive (Nearest Neighbor). Source: R23",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1567.004",
+      "score": 100,
+      "color": "#FF6B35",
+      "comment": "HIGH — Exfil via Slack webhook. Source: R23 CERT Polska Jan 2026",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 100,
+      "color": "#FF6B35",
+      "comment": "HIGH — C2 HTTP/HTTPS. Source: R13 R14 ESET",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1573.002",
+      "score": 100,
+      "color": "#FF6B35",
+      "comment": "HIGH — Encrypted channel (Cyclops Blink TLS, Kapeka AES-256). Source: R13 R27",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1090",
+      "score": 100,
+      "color": "#FF6B35",
+      "comment": "HIGH — Proxy + Tor relay. Source: R23",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1485",
+      "score": 100,
+      "color": "#E84393",
+      "comment": "HIGH — DATA DESTRUCTION (famille wipers: NotPetya, AcidRain, CaddyWiper, SwiftSlicer, ZEROLOT, DynoWiper). MARQUEUR DISTINCTIF APT44. Source: R16 R21 R22 R23",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1561.002",
+      "score": 100,
+      "color": "#E84393",
+      "comment": "HIGH — Disk Structure Wipe (DynoWiper, wipers famille). Source: R23",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1490",
+      "score": 100,
+      "color": "#E84393",
+      "comment": "HIGH — Inhibit System Recovery (vssadmin, bcdedit, wbadmin). Source: R2 R11",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1529",
+      "score": 100,
+      "color": "#E84393",
+      "comment": "HIGH — System Shutdown/Reboot forcé (DynoWiper). Source: R22 R23",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1491.002",
+      "score": 100,
+      "color": "#E84393",
+      "comment": "HIGH — 15 000+ sites géorgiens défacés + broadcast (2019). Source: R7 R8",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1486",
+      "score": 50,
+      "color": "#E84393",
+      "comment": "MEDIUM — Prestige ransomware transport/logistique européen (expérimental). Source: R1 R27",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1484.001",
+      "score": 100,
+      "color": "#E84393",
+      "comment": "HIGH — GPO modification (Default Domain Policy, ScheduledTasks.xml) pour déploiement domain-wide. Source: R2 R21 R23",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1105",
+      "score": 100,
+      "color": "#FF6B35",
+      "comment": "HIGH — Ingress Tool Transfer (.ps1 → .exe staging). Source: R23",
+      "enabled": true,
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1585.001",
+      "score": 75,
+      "color": "#6E7681",
+      "comment": "MEDIUM-HIGH — Personas Telegram (CARR, XakNet, Infoccentr) évaluées comme coordonnées. Source: R1 R25",
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1665",
+      "score": 100,
+      "color": "#6E7681",
+      "comment": "HIGH — Infrastructure masquée via tiers compromis. Source: R23",
+      "enabled": true,
+      "showSubtechniques": false
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#FF4757"
+    ],
+    "minValue": 0,
+    "maxValue": 100
+  },
+  "legendItems": [
+    {
+      "label": "HIGH confidence",
+      "color": "#FF4757"
+    },
+    {
+      "label": "MEDIUM-HIGH confidence",
+      "color": "#FFA502"
+    },
+    {
+      "label": "Impact / Sabotage — marqueur distinctif APT44",
+      "color": "#E84393"
+    },
+    {
+      "label": "Command & Control",
+      "color": "#FF6B35"
+    }
+  ],
+  "metadata": [
+    {
+      "name": "Evidence cutoff",
+      "value": "March 5, 2026"
+    },
+    {
+      "name": "Source primaire",
+      "value": "Andrey Pautov — CTI Research Sandworm/APT44"
+    },
+    {
+      "name": "Techniques Enterprise",
+      "value": "43"
+    },
+    {
+      "name": "Techniques ICS (séparées)",
+      "value": "5"
+    }
+  ],
+  "showTacticRowBackground": true,
+  "tacticRowBackground": "#1A1E35"
+}

@@ -1,0 +1,69 @@
+type,indicator,description,evidence,freshness,confidence,first_seen,source_ref,campaign,action
+ip,185.200.177.10,VPN/M365 logins in incident chain,near-hard,maybe_expired,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Hunt; short-term block only after validation
+ip,195.26.87.225,Renewables-sector login source,near-hard,maybe_expired,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Hunt; short-term block only after validation
+ip,146.190.211.75,FortiGate management abuse,near-hard,maybe_expired,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Hunt; short-term block only after validation
+ip,128.140.34.155,FortiGate management abuse,near-hard,maybe_expired,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Hunt; short-term block only after validation
+ip,95.85.114.66,C2 / tool retrieval infrastructure,near-hard,maybe_expired,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Hunt; short-term block only after validation
+ip,95.85.114.74,C2 / tool retrieval infrastructure,near-hard,maybe_expired,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Hunt; short-term block only after validation
+ip,31.172.71.5,Compromised server in incident chain,near-hard,maybe_expired,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Hunt; short-term block only after validation
+port,31.172.71.5:50443/tcp,Operational port,near-hard,maybe_expired,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Egress/ingress correlation
+port,31.172.71.5:8008/tcp,Operational port,near-hard,maybe_expired,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Egress/ingress correlation
+port,31.172.71.5:44445/tcp,Operational port,near-hard,maybe_expired,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Egress/ingress correlation
+domain,esetsmart[.]com,ESET-impersonation phishing domain,soft,volatile,LOW,2025,R21,ESET-impersonation 2025,Alert + block in phishing controls
+domain,esetscanner[.]com,ESET-impersonation phishing domain,soft,volatile,LOW,2025,R21,ESET-impersonation 2025,Alert + block in phishing controls
+domain,esetremover[.]com,ESET-impersonation phishing domain,soft,volatile,LOW,2025,R21,ESET-impersonation 2025,Alert + block in phishing controls
+domain,solntsepek[.]com,Persona-linked infrastructure (AcidPour context — low conf),soft,volatile,LOW,2024,R19,AcidPour 2024,Hunt + block (circular citation risk)
+domain,totalcmd[.]net,Masquerading software distribution domain,near-hard,maybe_expired,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Block + detonation
+domain,updater-file[.]xyz,Malware/tool delivery domain,near-hard,maybe_expired,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Block + detonation
+filename,dynacom_update.ps1,DynoWiper distribution script,hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Hunt + script block logging
+filename,exp1.ps1,DynoWiper distribution script,hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Hunt + script block logging
+filename,dynacom_update.exe,DynoWiper executable,hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Hunt + detonation + quarantine
+filename,Source.exe,DynoWiper executable,hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Hunt + detonation + quarantine
+filename,schtask.exe,DynoWiper masqueraded scheduled task,hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Hunt with hash + process lineage
+filename,KB284726.ps1,LazyWiper PowerShell script,hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Hunt + script block logging
+filename,scilc.exe,OT MicroSCADA binary (misuse = destructive),near-hard,durable_pattern,HIGH,2022-10,R3,MicroSCADA OT 2022,OT alert on non-maintenance args
+filename,108_100.exe,Industroyer2 main payload,hard,stable_tracking,HIGH,2022-04,R16,Industroyer2 April 2022,Hunt + detonation
+filename,zrada.exe,ArguePatch loader (Industroyer2 chain),hard,stable_tracking,HIGH,2022-04,R16,Industroyer2 April 2022,Hunt + detonation
+filename,link.ps1,GPO/script enumeration (Industroyer2 chain),near-hard,stable_tracking,HIGH,2022-04,R16,Industroyer2 April 2022,Hunt in GPO/SYSVOL
+filename,sc.sh,ORCSHRED Linux wiper,hard,stable_tracking,HIGH,2022-04,R16,Industroyer2 April 2022,Hunt in OT/Linux
+filename,wobf.sh,AWFULSHRED Linux wiper,hard,stable_tracking,HIGH,2022-04,R16,Industroyer2 April 2022,Hunt in OT/Linux
+filename,wsol.sh,SOLOSHRED Solaris wiper,hard,stable_tracking,HIGH,2022-04,R16,Industroyer2 April 2022,Hunt in OT/Linux
+hash_sha256,8759e79cf3341406564635f3f08b2f333b0547c444735dba54ea6fce8539cf15,dynacom_update.ps1 (DynoWiper),hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Block + hunt
+hash_sha256,f4e9a3ddb83c53f5b7717af737ab0885abd2f1b89b2c676d3441a793f65ffaee,exp1.ps1 (DynoWiper),hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Block + hunt
+hash_sha256,65099f306d27c8bcdd7ba3062c012d2471812ec5e06678096394b238210f0f7c,Source.exe (DynoWiper),hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Block + hunt
+hash_sha256,835b0d87ed2d49899ab6f9479cddb8b4e03f5aeb2365c50a51f9088dcede68d5,dynacom_update.exe (DynoWiper),hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Block + hunt
+hash_sha256,60c70cdcb1e998bffed2e6e7298e1ab6bb3d90df04e437486c04e77c411cae4b,schtask.exe (DynoWiper),hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Block + hunt
+hash_sha256,d1389a1ff652f8ca5576f10e9fa2bf8e8398699ddfc87ddd3e26adb201242160,schtask.exe (DynoWiper variant),hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Block + hunt
+hash_sha256,033cb31c081ff4292f82e528f5cb78a503816462daba8cc18a6c4531009602c2,KB284726.ps1 (LazyWiper),hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Block + hunt
+hash_sha256,68192ca0fde951d973eb41a07814f402f2b46e610889224bd54583d8a332a464,Probable DynoWiper distribution script,near-hard,stable,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Hunt
+hash_sha256,ba89f7ca1fdbd7f8ce5f081f393af6e95f7de473e3d6376f42f11ad58f0f75fb,dynacom_update.exe (CERT Polska set),hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Block + hunt
+hash_sha256,dc54d7f820f6f699ab5a976eb95d112f54b3dddde3f0097fc7322549753f7209,explorer.exe (CERT Polska set — masqueraded),hard,stable,HIGH,2025-12,R23,Poland Energy Dec 2025,Block + hunt
+hash_sha256,50df5734dd0c6c5983c21278f119527f9fdf6ef1d7e808a29754ebc5253e9a86,Cyclops Blink cpd sample 1,hard,stable_tracking,HIGH,2022,R13 R26,Cyclops Blink 2022,Block + hunt
+hash_sha256,c082a9117294fa4880d75a2625cf80f63c8bb159b54a7151553969541ac35862,Cyclops Blink cpd sample 2,hard,stable_tracking,HIGH,2022,R13 R26,Cyclops Blink 2022,Block + hunt
+hash_sha256,5866e1fa5e262ade874c4b869d57870a88e6a8f9d5b9c61bd5d6a323e763e021,Infamous Chisel killer component,hard,stable_tracking,HIGH,2023,R14,Infamous Chisel 2023,Block + hunt
+hash_sha256,2d19e015412ef8f8f7932b1ad18a5992d802b5ac62e59344f3aea2e00e0804ad,Infamous Chisel blob component,hard,stable_tracking,HIGH,2023,R14,Infamous Chisel 2023,Block + hunt
+hash_sha256,5c5323bd17fd857a0e77be4e637841dad5c4367a72ac0a64cc054f78f530ba37,ndbr_armv7l (Infamous Chisel),hard,stable_tracking,HIGH,2023,R14,Infamous Chisel 2023,Block + hunt
+hash_sha256,3cf2de421c64f57c173400b2c50bbd9e59c58b778eba2eb56482f0c54636dd29,ndbr_i686 (Infamous Chisel),hard,stable_tracking,HIGH,2023,R14,Infamous Chisel 2023,Block + hunt
+hash_sha256,338f8b447c95ba1c3d8d730016f0847585a7840c0a71d5054eb51cc612f13853,db multi-call binary (Infamous Chisel),hard,stable_tracking,HIGH,2023,R14,Infamous Chisel 2023,Block + hunt
+hash_sha256,33a2be6638be67ba9117e0ac7bad26b12adbcdf6f8556c4dc2ff3033a8cdf14f,td Tor component (Infamous Chisel),hard,stable_tracking,HIGH,2023,R14,Infamous Chisel 2023,Block + hunt
+hash_sha256,140accb18ba9569b43b92da244929bc009c890916dd703794daf83034e349359,tcpdump component (Infamous Chisel),hard,stable_tracking,HIGH,2023,R14,Infamous Chisel 2023,Block + hunt
+hash_sha1,fd9c17c35a68fc505235e20c6e50c622aed8dea0,108_100.exe (Industroyer2),hard,stable_tracking,HIGH,2022-04,R16,Industroyer2 April 2022,Block + hunt
+hash_sha1,6fa04992c0624c7aa3ca80da6a30e6de91226a16,zrada.exe (ArguePatch),hard,stable_tracking,HIGH,2022-04,R16,Industroyer2 April 2022,Block + hunt
+hash_sha1,9ce1491ce69809f92ae1fe8d4c0783bd1d11fbe7,pa.pay (TailJump encrypted chain),near-hard,stable_tracking,MEDIUM,2022-04,R16,Industroyer2 April 2022,Hunt
+hash_sha1,0090cb4de31d2d3bca55fd4a36859921b5fc5dae,link.ps1 (GPO enumeration),near-hard,stable_tracking,MEDIUM,2022-04,R16,Industroyer2 April 2022,Hunt
+hash_sha1,d27d0b9bb57b2bab881e0efb97c740b7e81405df,sc.sh (ORCSHRED),hard,stable_tracking,HIGH,2022-04,R16,Industroyer2 April 2022,Block + hunt
+hash_sha1,3cdbc19bc4f12d8d00b81380f7a2504d08074c15,wobf.sh (AWFULSHRED),hard,stable_tracking,HIGH,2022-04,R16,Industroyer2 April 2022,Block + hunt
+hash_sha1,8fc7646fa14667d07e3110fe754f61a78cfde6bc,wsol.sh (SOLOSHRED),hard,stable_tracking,HIGH,2022-04,R16,Industroyer2 April 2022,Block + hunt
+behavioral,scilc.exe -do [...OT SCIL script],MicroSCADA misuse — destructive OT command,near-hard,durable_pattern,HIGH,2022-10,R3,MicroSCADA OT 2022,OT alert + incident bridge
+behavioral,GPO + scheduled task wiper from DC,Domain-wide destructive rollout via GPO,near-hard,durable_pattern,HIGH,2022+,R2 R21 R23,Multiple campaigns,Containment + disable malicious GPO
+behavioral,"Default Domain Policy tampering (Files.xml, ScheduledTasks.xml)",Wiper deployment via domain policy,near-hard,durable_pattern,HIGH,2022+,R23,Multiple campaigns,Policy integrity check + rollback
+behavioral,pcap / tcpdump on appliance outside maintenance,Credential interception staging,near-hard,durable_pattern,HIGH,2021+,R29,Edge Campaign 2021-2025,Egress + forensic retention
+behavioral,Credential replay from edge IP to M365/cloud,Credential harvest post-capture,near-hard,durable_pattern,HIGH,2021+,R29,Edge Campaign 2021-2025,Lock account + isolate
+behavioral,"LSASS + NTDS.dit / SAM / SYSTEM extraction",Identity-tier escalation,near-hard,durable_pattern,HIGH,2022+,R23,Multiple campaigns,High-severity IR
+behavioral,Kerberos Diamond Ticket abuse,KDC abuse — TGT modification,near-hard,durable_pattern,HIGH,2025-12,R23,Poland Energy Dec 2025,KDC analytics + containment
+behavioral,Wiper small vs large files at high velocity,Destructive pattern — DynoWiper logic,near-hard,durable_pattern,HIGH,2025-12,R22 R23,DynoWiper 2025-2026,Destructive playbook trigger
+behavioral,Set-PSReadLineOption -HistorySaveStyle SaveNothing,PowerShell anti-forensics,near-hard,durable_pattern,HIGH,2025-12,R23,Poland Energy Dec 2025,Alert on admin hosts
+behavioral,[kworker:0/1] from user-space executable path,Linux process masquerade (Cyclops Blink),near-hard,durable_pattern,HIGH,2022,R13,Cyclops Blink 2022,EDR/analytics
+behavioral,Factory reset / config wipe of edge during attack,Anti-forensics after OT sabotage,soft,durable_pattern,MEDIUM,2025-12,R23,Poland Energy Dec 2025,Escalation + snapshot
+behavioral,Slack webhook exfiltration of script output,Data exfil via webhook,near-hard,durable_pattern,HIGH,2025-12,R23,Poland Energy Dec 2025,Webhook egress alert
+behavioral,"db.sqlite accessed by unexpected process",WaveSign-type Signal interception,near-hard,durable_pattern,HIGH,2023+,R28,WaveSign 2023-2025,Detection + hunt

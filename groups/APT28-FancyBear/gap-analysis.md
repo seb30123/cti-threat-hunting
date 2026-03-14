@@ -15,7 +15,7 @@
 | Techniques trouvées ET confirmées par MITRE | 18 |
 | Techniques trouvées NON listées par MITRE (à vérifier) | 2 |
 | Techniques MITRE que je n'ai pas trouvées | ~40 |
-| Taux de couverture de ma layer | ~30% |
+| Taux de couverture de ma layer | ~50% |
 
 
 
