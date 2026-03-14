@@ -23,12 +23,9 @@
 |--------|-----|-------------|-------|
 | Mandiant — APT28: A Window Into Russia's Cyber Espionage Operations | https://www.mandiant.com/resources/apt28-a-window-into-russias-cyber-espionage-operations | Rapport fondateur, analyse complète des TTPs | 2014 |
 | Microsoft MSTIC — Forest Blizzard (STRONTIUM) | https://www.microsoft.com/en-us/security/blog/2023/03/24/guidance-for-investigating-attacks-using-cve-2023-23397/ | TTPs récents, exploitation CVE | 2023 |
-| ESET — Sednit Part 1: Approaching the Target | https://web-assets.esetstatic.com/wls/2016/10/eset-sednit-part1.pdf
-| Spearphishing, Initial Access | 2016 |
-| ESET — Sednit Part 2: Observing the Comings and Goings | https://web-assets.esetstatic.com/wls/2016/10/eset-sednit-part-2.pdf
-| X-Agent, C2, Persistence | 2016 |
-| ESET — Sednit Part 3: A Mysterious Downloader | https://web-assets.esetstatic.com/wls/2016/10/eset-sednit-part3.pdf
-| Zebrocy, droppers | 2016 |
+| ESET — Sednit Part 1: Approaching the Target | https://web-assets.esetstatic.com/wls/2016/10/eset-sednit-part1.pdf | Spearphishing, Initial Access | 2016 |
+| ESET — Sednit Part 2: Observing the Comings and Goings | https://web-assets.esetstatic.com/wls/2016/10/eset-sednit-part-2.pdf | X-Agent, C2, Persistence | 2016 |
+| ESET — Sednit Part 3: A Mysterious Downloader | https://web-assets.esetstatic.com/wls/2016/10/eset-sednit-part3.pdf | Zebrocy, droppers | 2016 |
 | ESET — LoJax: First UEFI rootkit in the wild | https://www.welivesecurity.com/2018/09/27/lojax-first-uefi-rootkit-found-wild-courtesy-sednit-group/ | LoJax UEFI rootkit | 2018 |
 | CrowdStrike — Fancy Bear profile | https://www.crowdstrike.com/en-us/adversaries/fancy-bear/ | Profil complet, TTPs | 2024 |
 
