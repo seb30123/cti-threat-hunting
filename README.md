@@ -11,8 +11,8 @@ Chaque dossier contient un profil complet, un tableau de mapping TTPs, une layer
 
 | Groupe | Origine | Motivation | Statut | Techniques mappées |
 |--------|---------|------------|--------|-------------------|
-| [APT28 / Fancy Bear](./groups/APT28-FancyBear/) | 🇷🇺 Russie (GRU) | Espionnage | 🔄 En cours | - |
-| Sandworm |  Russie (GRU) | Sabotage | ⬜ À faire | — |
+| [APT28 / Fancy Bear](./groups/APT28-FancyBear/) |  Russie (GRU) | Espionnage / Sabotage | 🔄 En cours | 20 |
+| [APT44 / Sandsworm Team](./groups/APT44-SandSworm/) |  Russie (GRU) | Sabotage / Espionnage / Extorsion | ⬜ À faire | — |
 | LockBit |  International | Cybercrime | ⬜ À faire | — |
 | Lapsus$ |  UK/Brésil | Extorsion| ⬜ À faire | — |
 | Noname057 |  Russie | * | ⬜ À faire | — |
@@ -37,6 +37,14 @@ cti-threat-intelligence/
 │   │   ├── navigator-layer.json
 │   │   ├── iocs.csv
 │   │   └── sources/links.md
+|   |   APT28-FancyBear/
+|   |   ├── README.md
+|   |   ├── profile.md
+|   |   ├── ttps-mapping.md
+|   |   ├── gap-analysis.md
+|   |   ├── navigator-layer.json
+|   |   ├── iocs.csv
+|   |   └── sources/links.md
 │   └── (autres groupes à venir)
 └── templates/
     ├── group-profile-template.md
