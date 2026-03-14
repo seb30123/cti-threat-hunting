@@ -11,16 +11,16 @@ Chaque dossier contient un profil complet, un tableau de mapping TTPs, une layer
 
 | Groupe | Origine | Motivation | Statut | Techniques mappées |
 |--------|---------|------------|--------|-------------------|
-| [APT28 / Fancy Bear](./groups/APT28-FancyBear/) |  Russie (GRU) | Espionnage / Sabotage | 🔄 En cours | 20 |
-| [APT44 / Sandsworm Team](./groups/APT44-SandSworm/) |  Russie (GRU) | Sabotage / Espionnage / Extorsion | ⬜ À faire | — |
-| LockBit |  International | Cybercrime | ⬜ À faire | — |
-| Lapsus$ |  UK/Brésil | Extorsion| ⬜ À faire | — |
-| Noname057 |  Russie | * | ⬜ À faire | — |
-| LazarusGroup |  Corée du Nord | * | ⬜ À faire | — |
-| Volt Typhoon |  Chine | * | ⬜ À faire | — |
-| BlackCat/ ALPHV | * | * | ⬜ À faire | — |
-| TA505 | * | *| ⬜ À faire | — |
-| Cl0p | * | * | ⬜ À faire | — |
+| [APT28 / Fancy Bear](./groups/APT28-FancyBear/) |  Russie (GRU) | Espionnage / Sabotage | Complet | 20 |
+| [APT44 / Sandsworm Team](./groups/APT44-SandSworm/) |  Russie (GRU) | Sabotage / Espionnage / Extorsion | En cours | — |
+| LockBit |  International | Cybercrime |  À faire | — |
+| Lapsus$ |  UK/Brésil | Extorsion|  À faire | — |
+| Noname057 |  Russie | * |  À faire | — |
+| LazarusGroup |  Corée du Nord | * |  À faire | — |
+| Volt Typhoon |  Chine | * |  À faire | — |
+| BlackCat/ ALPHV | * | * |  À faire | — |
+| TA505 | * | *|  À faire | — |
+| Cl0p | * | * |  À faire | — |
 ---
 
 ## Structure du repo
