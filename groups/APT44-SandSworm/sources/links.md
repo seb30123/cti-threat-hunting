@@ -1,6 +1,6 @@
 # Sources — Sandworm Team / APT44
 
-**Evidence cutoff :** 5 mars 2026
+**Dernière mise à jour :** 10 mars 2026
 **Nombre de références :** 30 [R1]–[R30] + sources complémentaires
 
 > Toutes les sources sont TLP:WHITE et accessibles publiquement.
@@ -8,7 +8,7 @@
 
 ---
 
-## Références principales [R1]–[R30] (rapport Pautov 2026)
+## Références principales [R1]–[R30] 
 
 | Ref | Source | URL | Contenu | Année |
 |-----|--------|-----|---------|-------|
