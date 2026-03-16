@@ -75,6 +75,8 @@
 
 ## ATT&CK for ICS
 
+**ICS (Industrial Control Systems)** : Systèmes informatiques contrôlant des infrastructures physiques réelles, du type centrale éléctriques ou pipeline. Dans MITRE, elles ont un framework séparé. 
+
 | # | Comportement observé | Source | Technique ICS | ID ICS | Confiance |
 |---|---------------------|--------|---------------|--------|-----------|
 | ICS-1 | Exécution commandes OT via CLI contre composants industriels (scilc.exe, arguments non-maintenance) | R3, R23 | Command-Line Interface | T0807 | HIGH |
