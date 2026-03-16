@@ -46,10 +46,7 @@ cti-threat-intelligence/
 |   |   ├── iocs.csv
 |   |   └── sources/links.md
 │   └── (autres groupes à venir)
-└── templates/
-    ├── group-profile-template.md
-    ├── ttps-mapping-template.md
-    └── iocs-template.csv
+└── 
 ```
  
 ---
