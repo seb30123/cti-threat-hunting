@@ -4,7 +4,6 @@
 **Evidence cutoff :** 5 mars 2026
 **Techniques Enterprise identifiées :** 43
 **Techniques ATT&CK for ICS :** 5
-**Source primaire :** Pautov 2026 [R1–R30] + MITRE G0034 + recherches complémentaires
 
 ---
 

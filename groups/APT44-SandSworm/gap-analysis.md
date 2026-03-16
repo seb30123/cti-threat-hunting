@@ -1,7 +1,9 @@
 # Gap Analysis — Sandworm APT44 vs MITRE G0034
 
 **Date :** 2026-03
+
 **Layer MITRE référence :** attack.mitre.org/groups/G0034/
+
 **Techniques dans ma layer :** 43 Enterprise + 5 ICS = 48
 
 ---
@@ -34,7 +36,7 @@ Ces techniques **n'existaient pas ou n'étaient pas attribuées à APT44** dans 
 
 ---
 
-## Point de vigilance : Incident Pologne décembre 2025
+## Point de vigilance attaque récente : Incident Pologne décembre 2025 
 
 **ESET** attribue DynoWiper à Sandworm avec **confiance moyenne**.
 **CERT Polska** documente un chevauchement avec l'infrastructure historiquement trackée comme Berserk Bear (CrowdStrike), Ghost Blizzard (Microsoft), Dragonfly/TEMP.Isotope (Symantec/Secureworks), Static Tundra.
@@ -43,7 +45,7 @@ Ces techniques **n'existaient pas ou n'étaient pas attribuées à APT44** dans 
 
 ---
 
-## Techniques confirmées par MITRE 
+## Techniques confirmées par MITRE de ma layer 
 
 | ID | Technique | Source | 
 |----|-----------|-----------|
@@ -84,7 +86,7 @@ Ces techniques **n'existaient pas ou n'étaient pas attribuées à APT44** dans 
 
 ---
 
-## Techniques MITRE non présente 
+## Techniques non présente sur MITRE
 
 | ID | Technique | Pourquoi manquée | Source |
 |----|-----------|-----------------|-------------|
