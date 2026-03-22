@@ -13,7 +13,7 @@ Chaque dossier contient un profil complet, un tableau de mapping TTPs, une layer
 |--------|---------|------------|--------|-------------------|
 | [APT28 / Fancy Bear](./groups/APT28-FancyBear/) |  Russie (GRU) | Espionnage / Sabotage | Complet | 20 |
 | [APT44 / Sandsworm Team](./groups/APT44-SandSworm/) |  Russie (GRU) | Sabotage / Espionnage / Extorsion | Complet | 48 |
-| LockBit |  International | Cybercrime |  En cours | — |
+| [LockBit](./groups/LockBit/) |  International | Cybercrime |  En cours | — |
 | Lapsus$ |  UK/Brésil | Extorsion|  À faire | — |
 | Noname057 |  Russie | * |  À faire | — |
 | LazarusGroup |  Corée du Nord | * |  À faire | — |
