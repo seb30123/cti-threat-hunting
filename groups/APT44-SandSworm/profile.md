@@ -16,18 +16,18 @@
 
 ## 2. Victimologie
 
-| Secteur | Priorité |
+| Secteur | Gravité |
 |---------|----------|
-| Infrastructure énergétique IT+OT | ⭐⭐⭐ Critique |
-| Gouvernements & militaire (Ukraine, OTAN) | ⭐⭐⭐ Critique |
-| Edge & contrôle identité (VPN, FortiGate, AD) | ⭐⭐⭐ Critique |
-| Chaîne logistique drones & militaire | ⭐⭐⭐ Critique |
-| Télécommunications (satellite, mobile) | ⭐⭐ Élevé |
-| Médias & journalisme d'investigation | ⭐⭐ Élevé |
-| Processus démocratiques & élections | ⭐⭐ Élevé |
-| Organisations sportives | ⭐⭐ Élevé |
-| Transport, logistique, manufacturing | ⭐ Modéré |
-| Supply chain logicielle | ⭐ Modéré |
+| Infrastructure énergétique IT+OT |  Critique |
+| Gouvernements & militaire (Ukraine, OTAN) |  Critique |
+| Edge & contrôle identité (VPN, FortiGate, AD) |  Critique |
+| Chaîne logistique drones & militaire |  Critique |
+| Télécommunications (satellite, mobile) |  Élevé |
+| Médias & journalisme d'investigation |  Élevé |
+| Processus démocratiques & élections |  Élevé |
+| Organisations sportives |  Élevé |
+| Transport, logistique, manufacturing |  Modéré |
+| Supply chain logicielle |  Modéré |
 
 **Géographie** : Ukraine (priorité absolue depuis 2014), pays OTAN, USA, France, Pologne, Géorgie. Expansion 2021–2025 : Amérique du Nord, Europe Occidentale, Moyen-Orient (ATI campaign [R29]).
 

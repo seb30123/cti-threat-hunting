@@ -81,7 +81,7 @@ APT28 utilise une infrastructure sophistiquée et éphémère :
 | Drovorub | Linux implant | Rootkit Linux (documenté NSA/FBI 2020) |
 | Komplex | macOS RAT | Ciblage des systèmes macOS |
 | OCEANMAP | Backdoor | Utilisé via IMAP pour les communications C2 (post-2023) |
-
+| Downdelph | 
 ---
 
 ## 7. Timeline des campagnes majeures

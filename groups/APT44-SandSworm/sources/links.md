@@ -60,13 +60,5 @@
 
 ---
 
-## Ordre de lecture recommandé
 
-1. **MITRE G0034** — carte générale des techniques
-2. **Mandiant APT44 [R1]** — rapport de référence le plus complet
-3. **CERT Polska [R23]** — le plus récent (déc. 2025)
-4. **Volexity/Amazon ATI [R29]** — campagne edge 2024–2025
-5. **ESET Industroyer [R15] + Industroyer2 [R16]** — capacités ICS
-6. **NCSC Cyclops Blink [R13] + Infamous Chisel [R14]** — firmware + mobile
-7. **CERT-UA** — alertes temps réel opérations en cours
 
