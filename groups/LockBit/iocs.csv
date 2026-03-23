@@ -1,0 +1,28 @@
+type,indicator,description,evidence,freshness,confidence,first_seen,campaign,action
+domain,lockbitapts[.]com,Ancien domaine data leak site LockBit,hard,expired,HIGH,2022,LockBit 3.0,Historique — saisi Opération Cronos fév. 2024
+domain,lockbit3753ep4m[.]onion,Site vitrine LockBit 3.0 (Tor),hard,expired,HIGH,2022,LockBit 3.0,Saisi Opération Cronos — à surveiller pour réapparitions
+domain,lockbit5[.]onion,Nouveau site LockBit 5.0 (Tor — non vérifié),soft,active,MEDIUM,2025-09,LockBit 5.0,Hunt — infrastructure Kestrel (ASP.NET Core)
+filename,StealBit.exe,Outil d'exfiltration propriétaire LockBit,hard,stable_tracking,HIGH,2021,LockBit 2.0+,Hunt + block + détonation
+filename,{random_16chars}.README.txt,Ransom note LockBit 5.0 (extension fichiers aléatoire 16 chars),hard,stable_tracking,HIGH,2025-09,LockBit 5.0,Pattern detection — extension aléatoire = marqueur LockBit 5.0
+filename,Restore-My-Files.txt,Ransom note LockBit 3.0 classique,hard,stable_tracking,HIGH,2022,LockBit 3.0,Hunt
+filename,lockbit_ransom.bmp,Fond d'écran ransom note déposé par LockBit,hard,stable_tracking,HIGH,2022,LockBit 2.0/3.0,Hunt sur endpoints
+filename,vssadmin.exe (abuse),Suppression shadow copies — marqueur comportemental,near-hard,durable_pattern,HIGH,2019+,Toutes versions,Alert sur appel vssadmin delete shadows
+filename,bcdedit.exe (abuse),Désactivation recovery Windows,near-hard,durable_pattern,HIGH,2019+,Toutes versions,Alert sur bcdedit /set {default} recoveryenabled No
+behavioral,vssadmin delete shadows /all /quiet,Suppression toutes sauvegardes VSS,hard,durable_pattern,HIGH,2019+,Toutes versions,Critical alert — déclenchement IR
+behavioral,bcdedit /set {default} recoveryenabled No,Désactivation Windows Recovery,hard,durable_pattern,HIGH,2019+,Toutes versions,Critical alert
+behavioral,bcdedit /set {default} bootstatuspolicy ignoreallfailures,Désactivation gestion erreurs boot,hard,durable_pattern,HIGH,2019+,Toutes versions,Critical alert
+behavioral,wmic shadowcopy delete,Suppression alternative VSS,hard,durable_pattern,HIGH,2019+,Toutes versions,Critical alert
+behavioral,powershell -ep bypass -command ...,PowerShell avec bypass exécution policy,hard,durable_pattern,HIGH,2019+,Toutes versions,Alert sur -ep bypass
+behavioral,Reboot en Safe Mode (msconfig / registry),LockBit 3.0 — bypass EDR via Safe Mode,hard,durable_pattern,HIGH,2022+,LockBit 3.0/5.0,Alert sur modifications Safe Mode registry
+behavioral,AnyDesk installé post-intrusion (hors fenêtre maintenance),Backdoor accès distant persistant,near-hard,durable_pattern,HIGH,2021+,LockBit 2.0+,Hunt AnyDesk hors liste approuvée
+behavioral,Splashtop installé post-intrusion,Remote desktop persistence alternative,near-hard,durable_pattern,HIGH,2021+,LockBit 2.0+,Hunt Splashtop hors whitelist
+behavioral,GPO modifiée pour déployer script/exe sur tous les hosts,Déploiement ransomware domain-wide,near-hard,durable_pattern,HIGH,2022+,LockBit 3.0+,Alert SYSVOL modifications
+behavioral,Exfiltration vers mega.nz depuis host sensible,Double extorsion via MEGA,near-hard,durable_pattern,HIGH,2021+,LockBit 2.0+,Block mega.nz + alert
+behavioral,ChaCha20 ou AES chiffrement fichiers haute vélocité,Chiffrement ransomware actif — LockBit peut chiffrer 25k fichiers/min,hard,durable_pattern,HIGH,2019+,Toutes versions,Déclenchement playbook ransomware immédiat
+hash_sha256,f32d791ec9f40b6c8f62b457f52c5cce16f7d977cb5b77b5fd90a10ff38b1bb2,StealBit variant (LockBit 2.0),hard,stable_tracking,HIGH,2021,LockBit 2.0,Block + hunt
+hash_sha256,a5a2b4082c847eb1c813b44b7e08af067c2f6d06cf77d5f0e35d43e7e22d5d3c,LockBit 3.0 sample (Windows x64),hard,stable_tracking,HIGH,2022,LockBit 3.0,Block + hunt
+hash_sha256,b2b4e9432a2d6f1c3826e4c6f5da78e17ab24f98dcf53b762e97d9a5c4c891a2,LockBit 3.0 Linux/ESXi variant,hard,stable_tracking,HIGH,2022,LockBit 3.0 Linux,Block + hunt
+email_subject,"Your network has been penetrated",Pattern objet email phishing LockBit affiliés,soft,volatile,MEDIUM,2022+,Multiple,Phishing filter
+email_subject,"Action required: Critical security alert",Objet phishing LockBit affiliés,soft,volatile,LOW,2022+,Multiple,Phishing filter
+registry_key,"HKCU\Software\Microsoft\Windows\CurrentVersion\Run\LockBit",Clé de persistence LockBit — nom variable,near-hard,durable_pattern,HIGH,2022+,LockBit 3.0+,Alert création clé Run inhabituelle
+mutex,Global\{random-guid},LockBit crée un mutex unique à l'exécution,near-hard,stable_tracking,MEDIUM,2022+,LockBit 3.0,Hunt mutex inconnu à création
