@@ -14,7 +14,7 @@ Chaque dossier contient un profil complet, un tableau de mapping TTPs, une layer
 | [APT28 / Fancy Bear](./groups/APT28-FancyBear/) |  Russie (GRU) | Espionnage / Sabotage | Complet | 20 |
 | [APT44 / Sandsworm Team](./groups/APT44-SandSworm/) |  Russie (GRU) | Sabotage / Espionnage / Extorsion | Complet | 48 |
 | [LockBit](./groups/LockBit/) |  International | Cybercrime |  Complet | 34 |
-| Lapsus$ |  UK/Brésil | Extorsion|  À faire | — |
+| [Lapsus$] |  UK/Brésil | Extorsion|  En cours | — |
 | Noname057 |  Russie | * |  À faire | — |
 | LazarusGroup |  Corée du Nord | * |  À faire | — |
 | Volt Typhoon |  Chine | * |  À faire | — |
@@ -37,7 +37,8 @@ cti-threat-intelligence/
 │   │   ├── navigator-layer.json
 │   │   ├── iocs.csv
 │   │   └── sources/links.md
-|   |   APT28-FancyBear/
+|   |   └── MITRE_ATT&CK_LAYER_EXAMPLE/*.json
+|   ├── APT28-FancyBear/
 |   |   ├── README.md
 |   |   ├── profile.md
 |   |   ├── ttps-mapping.md
@@ -45,6 +46,25 @@ cti-threat-intelligence/
 |   |   ├── navigator-layer.json
 |   |   ├── iocs.csv
 |   |   └── sources/links.md
+|   |   └── MITRE_ATT&CK_LAYER_EXAMPLE/*.json
+|   ├── LockBit/
+|   |   ├── README.md
+|   |   ├── profile.md
+|   |   ├── ttps-mapping.md
+|   |   ├── gap-analysis.md
+|   |   ├── navigator-layer.json
+|   |   ├── iocs.csv
+|   |   └── sources/links.md
+|   |   └── MITRE_ATT&CK_LAYER_EXAMPLE/*.json
+|   ├── Lapsus$/
+|   |   ├── README.md
+|   |   ├── profile.md
+|   |   ├── ttps-mapping.md
+|   |   ├── gap-analysis.md
+|   |   ├── navigator-layer.json
+|   |   ├── iocs.csv
+|   |   └── sources/links.md
+|   |   └── MITRE_ATT&CK_LAYER_EXAMPLE/*.json
 │   └── (autres groupes à venir)
 └── 
 ```
