@@ -157,4 +157,10 @@ CSRB recommande au Congrès US de traiter spécifiquement la cybercriminalité j
 
 ---
 
+## 8. Actualisation
+
+**Sur le compte (X) Dark Web informer, on nous informe d'une mise en vente des données du group Mercor.com en date du 30/03/2026**
+
+---
+
 *Sources : MITRE G1004, CSRB Report (août 2023), Microsoft DEV-0537 (mars 2022), NCC Group TTPs (avr. 2022), Resecurity (sept. 2025), Push Security (nov. 2025), CISA AA23-320A (màj juil. 2025)*
