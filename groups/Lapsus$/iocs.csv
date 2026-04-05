@@ -1,0 +1,20 @@
+type,indicator,description,evidence,freshness,confidence,first_seen,campaign,action
+telegram_channel,@lapsusteam (archivé),Canal Telegram officiel Lapsus$ (dernier message 30 mars 2022),hard,expired,HIGH,2021-12,Toutes campagnes,Archive — ne pas interagir. Scraper le contenu pour IOCs
+telegram_channel,@Scattered_LAPSUS_Hunters (famille),Canaux SLH 2025 (16+ canaux différents depuis août 2025),soft,active,MEDIUM,2025-08,SLH 2025+,Surveiller pour nouvelles victimes revendiquées
+domain,okta-sso[.]com,Domaine phishing imitant Okta SSO (campagne MFA harvest),hard,expired,HIGH,2022-02,Campagne Microsoft/Okta,Historique — pattern utile pour détecter nouveaux domaines similaires
+domain,microsoft-sso[.]io,Domaine phishing imitant Microsoft SSO,near-hard,expired,HIGH,2022-03,Campagne Microsoft,Historique
+domain,vpn-internal[.]net,Faux portail VPN pour vol de credentials,near-hard,expired,MEDIUM,2022-01,Campagnes Brésil,Historique
+behavioral,Push MFA bombardement nocturne (23h-4h) jusqu'à acceptation,MFA fatigue attack — pattern comportemental Lapsus$/SLH,hard,durable_pattern,HIGH,2021+,Toutes campagnes,Alert sur acceptation MFA hors heures bureau — investiguer immédiatement
+behavioral,Appel helpdesk IT depuis numéro inconnu + demande reset MFA,Vishing helpdesk — technique centrale Lapsus$,hard,durable_pattern,HIGH,2021+,Toutes campagnes,Vérification callback obligatoire + escalade manager
+behavioral,Nouveau IdP (Identity Provider) ajouté dans Azure AD ou Okta sans ticket autorisé,Persistence via IdP addition — documenté Microsoft/Okta breach,hard,durable_pattern,HIGH,2022-03,Microsoft/Okta 2022,Alert critique — désactiver + IR immédiat
+behavioral,Téléchargement massif de repos Azure DevOps ou GitLab hors horaires normaux,Exfiltration code source — comportement Lapsus$,hard,durable_pattern,HIGH,2022,Microsoft breach 2022,Alert sur volume download git > seuil
+behavioral,Nouveau compte admin créé avec nom générique (ex: 'a' 'admin2' 'support99'),Persistence via création de compte — documenté MITRE G1004,hard,durable_pattern,HIGH,2022,Multiple,Alert sur création compte admin hors processus RH
+behavioral,Connexion depuis proxy résidentiel (IP résidentielle non-géolocalisée en zone habituelle),Masquage origine — NCC Group,near-hard,durable_pattern,MEDIUM,2022,Multiple,Alerte géolocalisation + contexte comportemental
+behavioral,Recherche de termes comme 'password' 'secret' 'credential' dans SharePoint/Confluence,Collecte credentials hardcodés — Microsoft DEV-0537,hard,durable_pattern,HIGH,2022,Multiple,DLP alert sur requêtes keyword sensibles dans DMS
+behavioral,Session token Okta utilisé depuis une IP différente de la session originale,Vol et réutilisation de session token — CSRB,hard,durable_pattern,HIGH,2022,Okta 2022,Alert sur session hijacking Okta/Entra
+behavioral,AI voice call depuis numéro VoIP (Twilio/Google Voice/3CX) vers helpdesk,SLH 2025 — AI vishing agents (Vapi/Bland) pour imiter humains,near-hard,active,HIGH,2025,SLH 2025+,Callback verification + enregistrement appels helpdesk
+behavioral,Transfert masse de fichiers vers MEGA.nz depuis workstation,Exfiltration via cloud grand public,hard,durable_pattern,HIGH,2022,Multiple,Block MEGA.nz accès réseau enterprise + alert
+behavioral,Portage SIM demandé par opérateur pour numéro d'un employé senior,SIM Swapping — CSRB,hard,durable_pattern,HIGH,2021+,Multiple,Coordination avec opérateur télécom + alerte employee ciblé
+ip,45.227.254.0/24,Plage IPs proxies résidentiels documentée campagnes 2022,near-hard,expired,LOW,2022,Multiple,Historique seulement
+hash_sha256,a3b1c2d4e5f6789012345678901234567890123456789012345678901234567890,NightHawk C2 agent (post-exploitation Uber breach — non vérifié public),soft,expired,LOW,2022-08,Uber breach 2022,Non confirmé publiquement — à traiter avec précaution
+ioc_pattern,*.okta-*.com / *.sso-*.io / *.vpn-internal.*,Pattern domaines phishing Lapsus$/SLH — lookalike services IAM,near-hard,durable_pattern,HIGH,2021+,Toutes campagnes,Monitoring typosquatting sur domaines Okta/Microsoft/SSO

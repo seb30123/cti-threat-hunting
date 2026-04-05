@@ -28,7 +28,6 @@ LockBit est le groupe RaaS le plus prolifique jamais documenté. Entre 2021 et 2
 | `navigator-layer.json` | Layer ATT&CK Navigator |
 | `iocs.csv` | IOCs documentés |
 | `sources/links.md` | Sources complètes |
-| `LockBit_CTI_Report.pdf` | Rapport PDF complet |
 
 ## Techniques ATT&CK — Résumé
 
