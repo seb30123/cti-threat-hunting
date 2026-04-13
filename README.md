@@ -15,7 +15,7 @@ Chaque dossier contient un profil complet, un tableau de mapping TTPs, une layer
 | [APT44 / Sandsworm Team](./groups/APT44-SandSworm/) |  Russie (GRU) | Sabotage / Espionnage / Extorsion | Complet | 48 |
 | [LockBit](./groups/LockBit/) |  International | Cybercrime |  Complet | 34 |
 | [Lapsus$](./groups/Lapsus$/) |  UK/Brésil | Extorsion|   Complet | 26 |
-| Noname057 |  Russie | * |  À faire | — |
+| Noname057 |  Russie | Hacktivist pro-russe / Sabotage |  En cours | — |
 | LazarusGroup |  Corée du Nord | * |  À faire | — |
 | Volt Typhoon |  Chine | * |  À faire | — |
 | BlackCat/ ALPHV | * | * |  À faire | — |
