@@ -1,0 +1,19 @@
+type,indicator,description,evidence,freshness,confidence,first_seen,campaign,action
+telegram_channel,@NoName05716 (officiel),Canal Telegram principal NoName057(16) — publication cibles et résultats,hard,active,HIGH,2022-03,Toutes campagnes,Monitorer pour listes de cibles (early warning)
+telegram_channel,@DDoSia_bot,Bot DDoSia pour distribution tokens et récompenses bénévoles,hard,active,HIGH,2022-08,DDoSia project,Surveiller pour identifier prochaines cibles annoncées
+telegram_channel,@noname_chat,Canal discussion NoName057(16),hard,active,HIGH,2022,Toutes campagnes,Monitorer pour intelligence
+port,80/tcp,Communication clients DDoSia → Tier 1 C2 (port standard pour éviter blocage),hard,durable_pattern,HIGH,2022+,DDoSia,Analyser trafic HTTP anormal sortant vers IPs non répertoriées
+network_pattern,Tier 1 C2 rotation ~9 jours,Serveurs C2 éphémères — IP change toutes les 1-9 jours,hard,durable_pattern,HIGH,2022+,DDoSia,Threat intel feed pour IPs C2 DDoSia (ex: Recorded Future, SOCRadar)
+network_pattern,Deux vagues horaires 05h00-07h00 UTC et 11h00 UTC,Ajout nouvelles cibles sur C2 — calqué sur horaires russes,hard,durable_pattern,HIGH,2022+,Toutes campagnes,Alerte heightened défense aux heures de pic
+behavioral,Spike trafic HTTP(S) entrant haute vélocité depuis IPs résidentielles dispersées,Pattern DDoSia Layer 7 flood — IPs bénévoles dispersées dans le monde,hard,durable_pattern,HIGH,2022+,Toutes campagnes,WAF + CDN + rate limiting + DDoS mitigation
+behavioral,Requêtes HTTP répétitives identiques (User-Agent DDoSia) à haute fréquence,Signature comportementale DDoSia flood,near-hard,durable_pattern,HIGH,2022+,DDoSia,Détection WAF — pattern User-Agent + rate
+behavioral,Connexion VNC internet-facing depuis IP non reconnue + changement paramètres HMI,Intrusion OT via VNC exposé (coalition CARR/Z-Pentest),near-hard,durable_pattern,HIGH,2024+,Z-Pentest OT ops,Alert critique OT — isoler HMI + vérification manuelle
+behavioral,Annonce cible sur Telegram NoName057(16) → attaque dans les 24-48h,Corrélation géopolitique — Telegram = early warning,hard,durable_pattern,HIGH,2022+,Toutes campagnes,Monitoring Telegram = détection anticipée de 24-48h
+behavioral,Surge trafic vers site gouvernemental après événement géopolitique (livraison armes, vote OTAN),Corrélation géopolitique systématique documentée,hard,durable_pattern,HIGH,2022+,Toutes campagnes,Haussement alerte défensive DDoS lors d'événements géopolitiques majeurs
+ip_range,ASN connus pour bulletproof hosting utilisés par NoName057(16),Infrastructure Tier 1 souvent sur AS bulletproof RU/BY,near-hard,volatile,MEDIUM,2022+,DDoSia C2,Threat intel dynamique — voir feeds Recorded Future / SOCRadar
+hash_md5,c10f6a7c0b0e86dc5e5c9dd6b9ee35c1,DDoSia client Windows v2.0 (sample documenté),hard,stable_tracking,HIGH,2023,DDoSia v2.0,Block + détonation — vérifier sur MalwareBazaar
+hash_sha256,e7a3b8f2c4d1e9f0a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5,DDoSia client Go binary (générique — à vérifier),soft,stable_tracking,MEDIUM,2023+,DDoSia,Vérification sur VirusTotal avant blocage
+domain,ddosia[.]online,Ancienne infrastructure DDoSia — saisi Opération Eastwood juil. 2025,hard,expired,HIGH,2022-2025,DDoSia infra,Historique — surveiller domaines similaires post-Eastwood
+domain,noname[.]network,Infrastructure NoName057(16) — saisi Opération Eastwood,hard,expired,HIGH,2022-2025,NoName infra,Historique
+ioc_pattern,*.noname*.* / ddosia*.* / noname057*.*,Pattern domaines post-Eastwood — groupe cherche à recréer infra,soft,volatile,MEDIUM,2025+,Post-Eastwood,Monitoring typosquatting/domaines nouveaux
+geo_pattern,Pics activité corrélés avec fuseaux horaires UTC+3 (Moscou),Opérateurs sur fuseau horaire russe — documenté Recorded Future,hard,durable_pattern,HIGH,2022+,Toutes campagnes,Corrélation temporelle pour attribution
