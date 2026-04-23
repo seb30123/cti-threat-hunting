@@ -15,8 +15,8 @@ Chaque dossier contient un profil complet, un tableau de mapping TTPs, une layer
 | [APT44 / Sandsworm Team](./groups/APT44-SandSworm/) |  Russie (GRU) | Sabotage / Espionnage / Extorsion | Complet | 48 |
 | [LockBit](./groups/LockBit/) |  International | Cybercrime |  Complet | 34 |
 | [Lapsus$](./groups/Lapsus$/) |  UK/Brésil | Extorsion|   Complet | 26 |
-| [Noname057](./groups/NoName057/) |  Russie | Hacktivist pro-russe / Sabotage |  En cours | 18 |
-| LazarusGroup |  Corée du Nord | * |  À faire | — |
+| [Noname057](./groups/NoName057/) |  Russie | Hacktivist pro-russe / Sabotage |  Complet | 18 |
+| LazarusGroup |  Corée du Nord | Espionnage / Sabotage / Extorsion |  En cours | — |
 | Volt Typhoon |  Chine | * |  À faire | — |
 | BlackCat/ ALPHV | * | * |  À faire | — |
 | TA505 | * | *|  À faire | — |
@@ -66,6 +66,15 @@ cti-threat-intelligence/
 |   |   └── sources/links.md
 |   |   └── MITRE_ATT&CK_LAYER_EXAMPLE/*.json
 |   ├── Noname057/
+|   |   ├── README.md
+|   |   ├── profile.md
+|   |   ├── ttps-mapping.md
+|   |   ├── gap-analysis.md
+|   |   ├── navigator-layer.json
+|   |   ├── iocs.csv
+|   |   └── sources/links.md
+|   |   └── MITRE_ATT&CK_LAYER_EXAMPLE/*.json
+|   ├── LazarusGroup/
 |   |   ├── README.md
 |   |   ├── profile.md
 |   |   ├── ttps-mapping.md
